@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+   <meta charset="UTF-8">    
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Niklas Torkki on 21 vuotias">
+    <meta name="author" content="Niklas Torkki">
+
+    
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel=stylesheet href="tyylii.css">  
+  <title>Niklas Torkki - Portfoliosivu</title>
+</head>
+<body>
+
+  <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large" onclick="w3_close()"><h3>Sulje &times</h3></button>
+
+    <a href="#" class="w3-bar-item w3-button"></a><a href = "index2.html"><h3>Etusivu</h3></a>
+    <a href="#" class="w3-bar-item w3-button"></a><a href = "saavutukset2.html"><h3>Saavutukset</h3></a>
+    <a href="#" class="w3-bar-item w3-button"></a><a href = "harrastukset2.html"><h3>Harrastukset</h3></a>
+    <a href="#" class="w3-bar-item w3-button"></a><a href = "historia2.html"><h3>Historia</h3></a>
+  </div>
+  
+  <!-- Page Content -->
+  <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+  
+  <div>
+    <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container">
+      
+    </div>
+  </div>
+       
+  <script>
+  function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+  }
+      function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+<nav>
+
+  <div class="left">
+    <a href="index2.html">Etusivu</a>
+</div>
+<div class="right">
+<a href="https://www.instagram.com/nikkejr/" target="_blank" rel="noopener noreferrer">
+  <i class="fa-brands fa-instagram"></i>
+  <span>Instagram</span>
+</a>
+  <a href="https://www.linkedin.com/in/niklas-torkki-721591297/" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-linkedin"></i>
+    <span>LinkedIn</span>
+  </a>
+    <a href="mailto:niklas.torkki1@gmail.com" target="_blank" rel="noopener noreferrer">
+      <i class="fa-solid fa-envelope"></i>
+      <span>Email</span>
+</a>
+</div>
+</nav>
+<body class="harrastukset2-body">
+  <div class = "title">
+    <h1>Harrastukset</h1> 
+  </div>
+  <section class="container">
+    <div class="image-section">
+        <img src="cs.jpg" alt="cs">
+    </div>
+    <div class="text-section">
+        <h1>Videopelaaminen</h1>
+        <h3>Tykkään pelata videopelejä tietokoneella. Lempipelini on Counter Strike 2. Kavereiden kanssa pelaaminen on parasta, sillä pystyy samalla keskustella eri asioista.</h3>
+    </div>
+</section>
+
+<section class="container">
+    <div class="image-section">
+        <img src="Torkki.jpg" alt="torkki">
+    </div>
+    <div class="text-section">
+        <h1>Jalkapallo</h1>
+        <h3>Tykkään pelata jalkapalloa. Olen harrastanut jalkapalloa 7-vuotiaasta lähtien. Nykyään pelaan joukkueessa Torkki Bros.</h3>
+    </div>
+</section>
+<section class="container">
+  <div class="image-section">
+      <img src="youtube.jpg" alt="screenshot">
+  </div>
+  <div class="text-section">
+      <h1>Videoeditointi</h1>
+      <h3>Olen harrastusmielessä editoinut erilaisia videoita ja äänitiedostoja. Sisältöäni voi mennä katsomaan YouTubesta kanavalta: Nikkejr.</h3>
+  </div>
+</section>
+
+</body>
+</body>
+</html>
